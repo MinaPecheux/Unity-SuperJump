@@ -26,3 +26,6 @@ workflows:
         scripts:
           - name: Deactivate License
             script: $UNITY_BIN -batchmode -quit -returnlicense -nographics
+        slack:
+          channel: '#test-codemagic-integration'
+          notify_on_build_start: true # To receive a notification when a build starts
