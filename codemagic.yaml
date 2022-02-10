@@ -8,6 +8,13 @@ workflows:
           - unity # <-- (Includes UNITY_SERIAL, UNITY_USERNAME, UNITY_PASSWORD)
         vars:
           UNITY_BIN: /Applications/Unity/Hub/Editor/2020.3.20f1/Unity.app/Contents/MacOS/Unity
+      triggering:
+        events:
+          - push
+        branch_patterns:
+          - pattern: feat-art/*
+            include: true
+            source: true
       scripts:
         - name: Activate License
           script: $UNITY_BIN -batchmode -quit -logFile -serial ${UNITY_SERIAL?} -username ${UNITY_USERNAME?} -password ${UNITY_PASSWORD?}
