@@ -12,7 +12,7 @@ workflows:
         events:
           - push
         branch_patterns:
-          - pattern: feat-art/*
+          - pattern: 'feat-art/*'
             include: true
             source: true
       scripts:
