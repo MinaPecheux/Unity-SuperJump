@@ -2,6 +2,8 @@
 
 **Mina Pêcheux - February 2022**
 
+![Codemagic build status](https://api.codemagic.io/apps/620526c3546bd2c8549d973d/unity-mac-workflow/status_badge.svg)
+
 This project is a sample demo for linking [Github **webhooks**](https://docs.github.com/en/github-ae@latest/developers/webhooks-and-events/webhooks) with [Codemagic workflows](https://unitycicd.com/), and for automatically **delivering the build artifacts** to a Slack channel.
 
 🔴 _**Important note**: the repo doesn't use [Git LFS](https://github.com/git-lfs/git-lfs/tree/main) at the moment - but this tool would probably be required to really handle production assets and bigger binaries!_
